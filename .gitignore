@@ -21,3 +21,5 @@ gradle/
 .gradle
 ./gradlew
 dependency-reduced-pom.xml
+__pycache__
+.venv/
