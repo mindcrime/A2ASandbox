@@ -8,7 +8,7 @@
 
     <groupId>io.github.a2asdk</groupId>
     <version>1.0.0.Alpha2-SNAPSHOT</version>
-    <artifactId>a2a-java-sdk-examples-client2</artifactId>
+    <artifactId>a2a-java-sdk-examples-helloworld2-client</artifactId>
 
     <name>Java SDK A2A Examples</name>
     <description>Examples for the Java SDK for the Agent2Agent Protocol (A2A)</description>
