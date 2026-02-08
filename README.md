@@ -1,6 +1,6 @@
 # A2ASandbox
 
-A repo of experiments, samples, tutorials, etc. related to working with the A2A protocol.
+A repo of experiments, samples, tutorials, etc. related to working with the [A2A protocol](https://a2a-protocol.org/latest/).
 
 ## Samples
 
@@ -15,3 +15,4 @@ A repo of experiments, samples, tutorials, etc. related to working with the A2A 
 * TBD
 * ??
 * Profit!!
+
