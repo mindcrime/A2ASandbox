@@ -4,14 +4,12 @@ package io.a2a.examples.helloworld;
 import java.util.Collections;
 import java.util.List;
 
-import jakarta.enterprise.context.ApplicationScoped;
-import jakarta.enterprise.inject.Produces;
-
 import io.a2a.server.PublicAgentCard;
 import io.a2a.spec.AgentCapabilities;
 import io.a2a.spec.AgentCard;
-import io.a2a.spec.AgentInterface;
 import io.a2a.spec.AgentSkill;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.enterprise.inject.Produces;
 
 @ApplicationScoped
 public class AgentCardProducer {
@@ -21,26 +19,27 @@ public class AgentCardProducer {
     public AgentCard agentCard() {
         // NOTE: Transport validation will automatically check that transports specified
         // in this AgentCard match those available on the classpath when handlers are initialized
-        return AgentCard.builder()
+        return new AgentCard.Builder()
                 .name("Hello World Agent")
                 .description("Just a hello world agent")
-                .supportedInterfaces(Collections.singletonList(
-                        new AgentInterface("JSONRPC", "http://localhost:8080")))
+                .url("http://localhost:8080")
                 .version("1.0.0")
                 .documentationUrl("http://example.com/docs")
-                .capabilities(AgentCapabilities.builder()
+                .capabilities(new AgentCapabilities.Builder()
                         .streaming(true)
                         .pushNotifications(true)
+                        .stateTransitionHistory(true)
                         .build())
                 .defaultInputModes(Collections.singletonList("text"))
                 .defaultOutputModes(Collections.singletonList("text"))
-                .skills(Collections.singletonList(AgentSkill.builder()
+                .skills(Collections.singletonList(new AgentSkill.Builder()
                                 .id("hello_world")
                                 .name("Returns hello world")
                                 .description("just returns hello world")
                                 .tags(Collections.singletonList("hello world"))
                                 .examples(List.of("hi", "hello world"))
                                 .build()))
+                .protocolVersion("0.3.0")
                 .build();
     }
 }

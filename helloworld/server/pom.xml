@@ -13,6 +13,7 @@
     <description>Examples for the Java SDK for the Agent2Agent Protocol (A2A)</description>
 
     <properties>
+        <a2a.version>0.3.2.Final</a2a.version>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <grpc.version>1.77.0</grpc.version>
@@ -69,107 +70,107 @@
             <dependency>
                 <groupId>io.github.a2asdk</groupId>
                 <artifactId>a2a-java-sdk-client</artifactId>
-                <version>${project.version}</version>
+                <version>${a2a.version}</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>a2a-java-sdk-client-transport-spi</artifactId>
-                <version>${project.version}</version>
+                <version>${a2a.version}</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>a2a-java-sdk-client-transport-jsonrpc</artifactId>
-                <version>${project.version}</version>
+                <version>${a2a.version}</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>a2a-java-sdk-client-transport-grpc</artifactId>
-                <version>${project.version}</version>
+                <version>${a2a.version}</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>a2a-java-sdk-client-transport-rest</artifactId>
-                <version>${project.version}</version>
+                <version>${a2a.version}</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>a2a-java-sdk-common</artifactId>
-                <version>${project.version}</version>
+                <version>${a2a.version}</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>a2a-java-sdk-http-client</artifactId>
-                <version>${project.version}</version>
+                <version>${a2a.version}</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>a2a-java-sdk-http-client-vertx</artifactId>
-                <version>${project.version}</version>
+                <version>${a2a.version}</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>a2a-java-sdk-jsonrpc-common</artifactId>
-                <version>${project.version}</version>
+                <version>${a2a.version}</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>a2a-java-sdk-spec</artifactId>
-                <version>${project.version}</version>
+                <version>${a2a.version}</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>a2a-java-sdk-spec-grpc</artifactId>
-                <version>${project.version}</version>
+                <version>${a2a.version}</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>a2a-java-sdk-server-common</artifactId>
-                <version>${project.version}</version>
+                <version>${a2a.version}</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>a2a-java-sdk-microprofile-config</artifactId>
-                <version>${project.version}</version>
+                <version>${a2a.version}</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>a2a-java-extras-common</artifactId>
-                <version>${project.version}</version>
+                <version>${a2a.version}</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>a2a-java-sdk-transport-grpc</artifactId>
-                <version>${project.version}</version>
+                <version>${a2a.version}</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>a2a-java-sdk-transport-jsonrpc</artifactId>
-                <version>${project.version}</version>
+                <version>${a2a.version}</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>a2a-java-sdk-transport-rest</artifactId>
-                <version>${project.version}</version>
+                <version>${a2a.version}</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>a2a-java-sdk-reference-common</artifactId>
-                <version>${project.version}</version>
+                <version>${a2a.version}</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>a2a-java-sdk-reference-grpc</artifactId>
-                <version>${project.version}</version>
+                <version>${a2a.version}</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>a2a-java-sdk-reference-jsonrpc</artifactId>
-                <version>${project.version}</version>
+                <version>${a2a.version}</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>a2a-java-sdk-reference-rest</artifactId>
-                <version>${project.version}</version>
+                <version>${a2a.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.grpc</groupId>
@@ -278,21 +279,18 @@
             <dependency>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>a2a-java-sdk-tests-server-common</artifactId>
-                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>a2a-java-sdk-tests-server-common</artifactId>
                 <type>test-jar</type>
                 <scope>test</scope>
-                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>a2a-java-sdk-server-common</artifactId>
                 <type>test-jar</type>
                 <scope>test</scope>
-                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.jspecify</groupId>

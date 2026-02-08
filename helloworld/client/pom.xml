@@ -14,9 +14,7 @@
     <description>Examples for the Java SDK for the Agent2Agent Protocol (A2A)</description>
 
     <properties>
-        <!--
-        <jbang.script.name>src/main/java/io/a2a/examples/helloworld/HelloWorldRunner.java</jbang.script.name>
-      -->
+      <a2a.version>0.3.2.Final</a2a.version>
       <maven.compiler.source>17</maven.compiler.source>
       <maven.compiler.target>17</maven.compiler.target>
     </properties>
@@ -26,7 +24,7 @@
             <dependency>
                 <groupId>io.github.a2asdk</groupId>
                 <artifactId>a2a-java-sdk-client</artifactId>
-                <version>${project.version}</version>
+                <version>${a2a.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
