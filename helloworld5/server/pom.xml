@@ -7,7 +7,7 @@
 
     <groupId>io.github.a2asdk</groupId>
     <version>1.0.0.Alpha2-SNAPSHOT</version>
-    <artifactId>a2a-java-sdk-examples-helloworld2-server</artifactId>
+    <artifactId>a2a-java-sdk-examples-helloworld5-server</artifactId>
 
     <name>Java SDK A2A Examples</name>
     <description>Examples for the Java SDK for the Agent2Agent Protocol (A2A)</description>
@@ -66,17 +66,16 @@
     </properties>
 
     <dependencyManagement>
-
         <dependencies>
 
             <dependency>
                 <groupId>org.springframework.ai</groupId>
                 <artifactId>spring-ai-bom</artifactId>
-                <version>1.1.2</version> <!-- Use the appropriate Spring AI
-                version -->
+                <version>1.1.2</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
             <dependency>
                 <groupId>io.github.a2asdk</groupId>
                 <artifactId>a2a-java-sdk-client</artifactId>
@@ -313,11 +312,11 @@
 
 
     <dependencies>
+
         <dependency>
             <groupId>org.springframework.ai</groupId>
             <artifactId>spring-ai-openai</artifactId>
         </dependency>
-
         <dependency>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-bom</artifactId>

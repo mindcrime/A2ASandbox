@@ -4,12 +4,14 @@ package io.a2a.examples.helloworld;
 import java.util.Collections;
 import java.util.List;
 
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.enterprise.inject.Produces;
+
 import io.a2a.server.PublicAgentCard;
 import io.a2a.spec.AgentCapabilities;
 import io.a2a.spec.AgentCard;
+import io.a2a.spec.AgentInterface;
 import io.a2a.spec.AgentSkill;
-import jakarta.enterprise.context.ApplicationScoped;
-import jakarta.enterprise.inject.Produces;
 
 @ApplicationScoped
 public class AgentCardProducer {

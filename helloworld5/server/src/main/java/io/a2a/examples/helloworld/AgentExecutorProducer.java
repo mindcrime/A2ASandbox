@@ -15,6 +15,7 @@ import io.a2a.A2A;
 import io.a2a.server.agentexecution.AgentExecutor;
 import io.a2a.server.agentexecution.RequestContext;
 import io.a2a.server.events.EventQueue;
+import io.a2a.spec.A2AError;
 import io.a2a.spec.JSONRPCError;
 import io.a2a.spec.Part;
 import io.a2a.spec.TextPart;
@@ -69,8 +70,8 @@ public class AgentExecutorProducer
             		
             		if( part instanceof TextPart ) 
 					{
-						System.out.println("Text content: " + ((TextPart) part).getText() );
-						sb.append(((TextPart) part).getText() );
+						System.out.println("Text content: " + ((TextPart) part).getText());
+						sb.append(((TextPart) part).getText());
 					}
             	}
             	
