@@ -1,3 +1,4 @@
 #!/bin/bash
 
-java -jar target/quarkus-app/quarkus-run.jar
+java -jar target/a2a-java-sdk-examples-helloworld-client-1.0.0.Alpha2-SNAPSHOT.jar
+
